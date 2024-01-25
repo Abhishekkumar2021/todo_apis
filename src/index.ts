@@ -30,3 +30,5 @@ connectAndStart(); // To connect to the database and start the server
 app.use("/", homeRoutes)
 app.use('/api/v1/todos', todoRoutes);
 app.use("*", errorRoutes)
+
+export default app;
