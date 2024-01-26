@@ -1,7 +1,10 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import path from 'path';
+import morgan from 'morgan';
 const app = express();
 const __dirname = path.resolve();
 // Setting up the middlewares & other configurations
@@ -15,4 +18,5 @@ app.use(cors({
     origin: process.env.CLIENT_URL,
     credentials: true,
 }));
+app.use(morgan('dev'));
 export default app;

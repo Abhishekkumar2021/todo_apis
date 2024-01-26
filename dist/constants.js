@@ -1,1 +1,1 @@
-export const DB_NAME = 'advanced-todo';
+export const DB_NAME = 'advanced_todo';
